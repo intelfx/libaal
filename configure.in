@@ -72,7 +72,7 @@ AC_PROG_CC
 
 # Checks for header files.
 AC_HEADER_STDC
-AC_CHECK_HEADERS([errno.h fcntl.h stdlib.h string.h sys/ioctl.h unistd.h])
+AC_CHECK_HEADERS([errno.h fcntl.h stdlib.h string.h sys/ioctl.h unistd.h linux/falloc.h linux/types.h])
 
 AC_C_BIGENDIAN
 
@@ -86,7 +86,7 @@ AC_STRUCT_TM
 AC_PROG_GCC_TRADITIONAL
 AC_FUNC_MEMCMP
 AC_HEADER_STDC
-AC_CHECK_FUNCS([memmove memset strchr strerror strpbrk strrchr])
+AC_CHECK_FUNCS([memmove memset strchr strerror strpbrk strrchr fallocate])
 
 # The options -falign-* are supported by gcc 3.0 or later.
 # Probably it is sufficient to only check for -falign-loops.
