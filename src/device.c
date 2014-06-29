@@ -123,7 +123,6 @@ errno_t aal_device_discard(
 	count_t count)		/* number of blocks to be discarded */
 {
 	aal_assert("intelfx-1", device != NULL);
-	aal_assert("intelfx-2", buff != NULL);
 
 	aal_device_check_routine(device, discard, return -EINVAL);
 	return device->ops->discard(device, block, count);
