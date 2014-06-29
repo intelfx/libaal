@@ -1,7 +1,7 @@
 %define enable_debug 1
 
 Name: libaal
-Version: 1.0.5
+Version: 1.0.6
 Release: 1
 Epoch:   1
 Summary: Abstraction library for ReiserFS utilities
